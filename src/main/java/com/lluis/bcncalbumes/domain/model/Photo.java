@@ -7,9 +7,11 @@ import com.lluis.bcncalbumes.common.Validator;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.Value;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class Photo implements Validator {
     private PhotoId id;

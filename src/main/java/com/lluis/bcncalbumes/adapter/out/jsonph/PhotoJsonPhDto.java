@@ -7,8 +7,10 @@ import com.lluis.bcncalbumes.domain.model.Photo.PhotoId;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class PhotoJsonPhDto {
     private Long id;
@@ -19,7 +21,7 @@ public class PhotoJsonPhDto {
 
     public Photo mapToDomain() {
         return new Photo(
-            id == null ? null : new PhotoId(albumId),
+            id == null ? null : new PhotoId(id),
             albumId == null ? null : new Album(new AlbumId(albumId)),
             title,
             url,
