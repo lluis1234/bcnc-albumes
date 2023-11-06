@@ -74,6 +74,7 @@
 				<configuration>
 					<excludes>
 						<exclude>com/lluis/**/BcncAlbumesApplication.class</exclude>
+						<exclude>com/lluis/**/ControllerExceptionHandler.class</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
